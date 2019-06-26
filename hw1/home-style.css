@@ -1,0 +1,276 @@
+body{
+   margin: 0px;
+}
+main{
+    display: flex; 
+    justify-content: space-between;
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://www.mantovasitiweb.it/images/slider2.jpg);
+    
+}
+
+h1{
+    font-size: 48px;
+    font-family: 'Roboto Slab', serif;
+    color:rgb(177, 20, 20);
+}
+#divider{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://www.mantovasitiweb.it/images/slider2.jpg);
+    margin-top: -70px;
+}
+#divider img{
+    height: 30%;
+    width: 30%;
+}
+#menu{
+    
+    background-image: url(https://www.mantovasitiweb.it/images/slider2.jpg);
+    height: 500vh;
+    width: 20%;
+    border-right: 6px solid grey;
+}
+#navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px;
+    position: fixed;
+    width:15%;
+    
+    
+}
+#navbar a{
+    text-decoration: none;
+    background-color: rgb(177, 20, 20);
+    border-radius: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 30px;
+    width: 100px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto Slab', serif;
+}
+#content{
+    width: 80%;
+    background-image: url(http://localhost/hw1/interlaced.png);
+}
+#content-title{
+    font-size: 34px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-left: 100px;
+}
+#grid{
+    display: flex;
+    flex-wrap: wrap; 
+    align-content: space-between;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+#grid .box{
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right:20px;
+    width: 25.5%;
+    padding: 10px; 
+    border: 2px solid rgb(58, 58, 58);
+    border-radius: 20px;
+}
+.box img{
+    border-radius: 5px;
+}
+
+.item{
+    width: 100%;
+    color: grey;
+    text-align: center;
+}
+
+input{
+    margin-left: 35px;
+    font-size: 18px;
+    padding: 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#button-cont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#search-cont{
+    margin-top: 50px;
+    width: 316px;
+    margin-left: 100px;
+}
+#result div{
+    display: flex;
+    width: 840px;
+    border: 2px solid grey;
+    margin-bottom: 1px;
+    margin-left: 100px;
+}
+#result div img{
+    width: 120px;
+    height: 120px;
+}
+#result div p{
+    font-size: 20px;
+    margin-left: 35px;
+    background-color: green;
+    border: 1px solid rgb(1, 100, 1);
+    border-radius: 30px;
+    padding: 10px;
+}
+.hidden{
+    display: none;
+}
+.scelta{
+    margin-top: 35px;
+    margin-left: 40px;
+    font-size: 15px;
+    padding: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+}
+#titolo-playlist{
+    margin: 30px 0px 0px 0px; 
+    width: 92%;
+}
+.button{
+    margin-left: 40px;
+    padding:  3px;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 100%;
+    margin-top: 35px;
+}
+.collection{
+    display: flex;
+    width: 650px;
+    border: 2px solid grey;
+    margin-bottom: 1px;
+    margin-left: 100px;
+}
+.collection img{
+    width: 90px;
+    height: 90px;    
+}
+.collection p{
+    font-size: 20px;
+    margin-left: 35px;
+    background-color: green;
+    border: 1px solid rgb(1, 100, 1);
+    border-radius: 30px;
+    padding: 10px;
+}
+#modal-view{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#modal-view.hidden{
+    display:none;
+}
+#modal-view img{
+    width: 25%;
+    height: 50%;
+}
+#modal-view p{
+    font-size: 30px;
+    background-color: green;
+    border: 1px solid rgb(1, 100, 1);
+    border-radius: 30px;
+    padding: 15px;    
+}
+.no-scroll{
+    overflow: hidden;
+}
+@media (max-width: 1100px) { 
+    #result div{
+        width: 620px;   
+    }
+}
+@media (max-width: 900px) { 
+    #navbar a{
+        font-size: 20px;
+        width: 70px;
+    }
+    #result div{
+        width: 420px;   
+    }
+    button.button{
+        margin: 0px;
+    }
+    .collection{
+        width: 420px;    
+    }
+}
+@media (max-width: 750px) { 
+    #navbar a{
+        width: 40px;
+        font-size: 12px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    #divider{
+        margin-top: -40px;
+    }
+    #playlist-create p{
+        font-size: 16px;
+    }
+    #result div{
+        width: 320px;   
+    }
+    .collection{
+        width: 320px;    
+    }
+}
+@media (max-width: 650px) { 
+    #navbar a{
+        font-size: 10px;
+        width: 20px;
+        
+    }
+    p#content-title{
+        margin-left:40px;
+    }
+    div#grid{
+        margin-left:40px;
+    }
+    .collection{
+        width: 320px;    
+    }
+}
+@media (max-width: 500px) { 
+    #navbar a{
+        font-size: 5px;
+        width: 10px;
+    }
+    form#search-cont{
+        margin-left:40px;
+    }
+    .collection{
+        width: 150px;    
+    }
+}
